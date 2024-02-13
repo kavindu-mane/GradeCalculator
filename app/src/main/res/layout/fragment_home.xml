@@ -105,6 +105,8 @@
         android:text="@string/retake"
         android:layout_marginHorizontal="10dp"
         app:icon="@drawable/baseline_autorenew_24"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
         style="@style/Widget.MaterialComponents.Button.Icon"
         />
     </LinearLayout>

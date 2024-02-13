@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Grade Calculator</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="grade">Grade</string>
+    <string name="calculate_grade">Calculate Grade</string>
+    <string name="subject">Subject</string>
+    <string name="marks">Marks</string>
+    <string name="calculate">Calculate</string>
+    <string name="save">Save</string>
+    <string name="retake">Retake</string>
+    <string name="toggle_theme">Toggle Theme</string>
+</resources>

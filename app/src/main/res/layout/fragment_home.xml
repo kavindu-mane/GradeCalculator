@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="20dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="@string/calculate_grade"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- grade -->
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="25dp" />
+
+    <!-- subject -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/subject"
+        android:layout_marginBottom="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSecondary"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- marks -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/marks"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSecondary"
+            android:inputType="number"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- calculate button -->
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/calculate"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:icon="@drawable/baseline_calculate_24"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+    />
+
+    <!-- buttons layout -->
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        android:orientation="horizontal">
+    <!-- calculate button -->
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/save"
+        android:layout_marginHorizontal="10dp"
+        app:icon="@drawable/baseline_arrow_downward_24"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        />
+    <!-- calculate button -->
+    <Button
+        android:id="@+id/retake"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/retake"
+        android:layout_marginHorizontal="10dp"
+        app:icon="@drawable/baseline_autorenew_24"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        />
+    </LinearLayout>
+</LinearLayout>

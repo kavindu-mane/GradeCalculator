@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:rowCount="2"
+    android:background="@drawable/card_background"
+    android:columnCount="2"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/subjectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_gravity="end"
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF1818"
+        app:iconTint="#fff"
+        app:cornerRadius="30dp"
+        android:paddingVertical="12dp"
+        android:layout_rowSpan="2"
+        style="@style/Widget.MaterialComponents.Button.IconOnly"
+        app:icon="@drawable/sharp_auto_delete_24"/>
+
+    <TextView
+        android:id="@+id/marksText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp" />
+
+</GridLayout>
